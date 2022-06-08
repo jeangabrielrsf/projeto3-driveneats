@@ -1,6 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
+
+.righteous {
+    font-family: 'Righteous', cursive;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .topo {
     width: 414px;
     height: 92px;
-    background-color: red;
+    background-color: #CF2B2B;
     position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    font-weight: 400;
+    margin: 0px 20px;
+}
+
+.titulo p:first-child {
+    font-size: 44px;
+    line-height: 54.63px;
+}
+
+.titulo p:nth-child(2) {
+    font-size: 18px;
+}
+
+.conteudo {
+    background-color: #E5E5E5;
+}
+
+.barra-inferior {
+    width: 414px;
+    height: 92px;
+    background-color: aqua;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
