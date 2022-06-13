@@ -21,8 +21,8 @@
             <p class="righteous">Primeiro, seu prato</p>
         </div>
 
-        <div class="cardapio roboto">
-            <div class="itens-cardapio">
+        <div class="cardapio roboto prato">
+            <div class="itens-cardapio" onclick="selecionarPrato(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="itens-cardapio">
+            <div class="itens-cardapio" onclick="selecionarPrato(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="itens-cardapio">
+            <div class="itens-cardapio" onclick="selecionarPrato(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -73,8 +73,8 @@
             <p class="righteous">Agora, sua bebida</p>
         </div>
 
-        <div class="cardapio roboto">
-            <div class="itens-cardapio">
+        <div class="cardapio roboto bebida">
+            <div class="itens-cardapio" onclick="selecionarBebida(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="itens-cardapio">
+            <div class="itens-cardapio" onclick="selecionarBebida(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -104,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="itens-cardapio">
+            <div class="itens-cardapio" onclick="selecionarBebida(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -125,8 +125,8 @@
             <p class="righteous">Por fim, sua sobremesa</p>
         </div>
 
-        <div class="cardapio roboto">
-            <div class="itens-cardapio">
+        <div class="cardapio roboto sobremesa">
+            <div class="itens-cardapio" onclick="selecionarSobremesa(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -141,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="itens-cardapio">
+            <div class="itens-cardapio" onclick="selecionarSobremesa(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -156,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="itens-cardapio">
+            <div class="itens-cardapio" onclick="selecionarSobremesa(this)">
                 <div class="item-imagem">
                     <img src="./frango_yin_yang 1.png" alt="">
                 </div>
@@ -176,12 +176,12 @@
     </div>
 
     <div class="barra-inferior roboto">
-        <div class="botao-barra-inferior">
-            <button disabled="disabled">
-                Selecione os 3 itens para fechar o pedido
-            </button>
+        <div class="container-botao-barra-inferior">
+            <button class="botao-barra-inferior">Selecione os 3 itens para fechar o pedido</button>
         </div>
     </div>
     
+
+    <script src="scripts.js"></script>
 </body>
 </html>
