@@ -85,6 +85,7 @@ body {
 .item-imagem {
     width: 144px;
     height: 87px;
+    margin: 0px 10px;
 }
 
 .item-imagem img {
@@ -102,11 +103,12 @@ body {
 
 
 .item-descricao {
-    width: 150px;
+    width: 100%;
     font-size: 15px;
     font-weight: 300;
     line-height: 17.58px;
     color: #A6A6A6;
+    margin-left: 3px;
 }
 
 .item-preco {
@@ -144,6 +146,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: not-allowed;
 }
 
 
@@ -159,4 +162,18 @@ body {
 .botao-habilitado:hover {
     background-color: #6dcf6b;
     cursor: pointer;
+}
+
+.escondido {
+    display: none;
+}
+
+.container-preco {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.container-preco ion-icon {
+    color: #32B72F;
 }
