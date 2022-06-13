@@ -10,47 +10,51 @@ let habilitado = false;
 
 function selecionarPrato (elemento) {
     const verdinho = document.querySelector(".prato .selecionado");
-    const icone = document.querySelector(".container-preco .icone-check");
+    const icone = document.querySelector(".prato .container-preco .icone-habilitado");
     pratoSelecionado = elemento.querySelector(".item-titulo p").innerHTML;
     pratoValue = elemento.querySelector(".preco p").innerHTML;
 
 
     if (verdinho !== null) {
-        console.log(icone);
-        icone.classList.add("escondido");
+        icone.classList.remove("icone-habilitado");
         verdinho.classList.remove("selecionado");
     }
 
-    console.log(icone);
-    icone.classList.remove("escondido");
+    elemento.querySelector(".prato .container-preco .icone-check").classList.add("icone-habilitado");
     elemento.classList.add("selecionado");
     habilitaBotao();
 }
 
 function selecionarBebida (elemento) {
     const verdinho = document.querySelector(".bebida .selecionado");
+    const icone = document.querySelector(".bebida .container-preco .icone-habilitado");
     bebidaSelecionado = elemento.querySelector(".item-titulo p").innerHTML;
     bebidaValue = elemento.querySelector(".preco p").innerHTML;
 
 
     if (verdinho !== null) {
+        icone.classList.remove("icone-habilitado");
         verdinho.classList.remove("selecionado");
     }
 
+    elemento.querySelector(".bebida .container-preco .icone-check").classList.add("icone-habilitado");
     elemento.classList.add("selecionado");
     habilitaBotao();
 }
 
 function selecionarSobremesa (elemento) {
     const verdinho = document.querySelector(".sobremesa .selecionado");
+    const icone = document.querySelector(".sobremesa .container-preco .icone-habilitado");
     sobremesaSelecionado = elemento.querySelector(".item-titulo p").innerHTML;
     sobremesaValue = elemento.querySelector(".preco p").innerHTML;
 
 
     if (verdinho !== null) {
+        icone.classList.remove("icone-habilitado");
         verdinho.classList.remove("selecionado");
     }
 
+    elemento.querySelector(".sobremesa .container-preco .icone-check").classList.add("icone-habilitado");
     elemento.classList.add("selecionado");
     habilitaBotao();
 }
